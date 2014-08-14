@@ -1,0 +1,27 @@
+{
+  "name": "timeserver",
+  "version": "0.0.1",
+  "description": "TCP time server",
+  "main": "server.js",
+  "scripts": {
+    "test": "node "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macikokoro/time-server.git"
+  },
+  "keywords": [
+    "time",
+    "server",
+    "node"
+  ],
+  "author": "JQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macikokoro/time-server/issues"
+  },
+  "homepage": "https://github.com/macikokoro/time-server",
+  "dependencies": {
+    "express": "^4.8.3"
+  }
+}
