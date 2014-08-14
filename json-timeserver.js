@@ -1,9 +1,13 @@
 'use strict'
-
+// Dependencies
 var express = require('express');
 var http = require('http');
-var app = express();
 
+// Dependencies instances
+var app = express();
+var server = http.createServer(app);
+
+// Routing
 var date = new Date;
 
 app.get('/', function(req, res){
@@ -14,10 +18,7 @@ app.get('/:name', function(req, res) {
   res.send({'msg' : 'Yo ' + req.params.name + '!'});
 });
 
-app.use(express.static(__dirname + '/static'));
-
-var server = http.createServer(app);
-
+//Server configuration
 server.listen(3000, function() {
   console.log('server runnig on port 3000');
 });
